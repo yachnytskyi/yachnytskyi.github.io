@@ -5,6 +5,7 @@ body {
   padding: 0;
   background: white;
   color: #333;
+  box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -41,6 +42,7 @@ nav a {
   text-decoration: none;
   color: #4CAF50;
   font-weight: bold;
+  display: inline-block;
 }
 
 /* Main Sections */
@@ -56,6 +58,7 @@ h2 {
   color: #4CAF50;
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
+  font-size: 1.8rem;
 }
 
 /* Skills Container */
@@ -74,6 +77,7 @@ h2 {
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill:hover {
@@ -155,6 +159,56 @@ footer {
 }
 
 /* Media Queries for responsive design */
+@media (max-width: 1024px) {
+  /* Adjust header layout for larger tablets or small desktop screens */
+  .header-content {
+      flex-direction: column;
+  }
+
+  .header-content .profile-pic {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+
+  /* Adjusting navigation links for medium screens */
+  nav {
+      padding: 0.5rem;
+  }
+
+  nav a {
+      display: block;
+      margin: 0.5rem 0;
+      text-align: center;
+  }
+
+  /* Skills Section */
+  .skills-container {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .skill {
+      width: 120px;
+      text-align: center;
+  }
+
+  /* Project Section */
+  .project {
+      margin: 1.5rem 0;
+  }
+
+  /* Certifications Section */
+  .certifications-container {
+      flex-direction: row;
+      justify-content: center;
+  }
+
+  .certification {
+      width: 120px;
+      text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   /* Make header items stack on smaller screens */
   .header-content {
@@ -221,5 +275,9 @@ footer {
   /* Project text size adjustment */
   .project h3 {
       font-size: 1.2rem;
+  }
+
+  .project p {
+      font-size: 0.9rem;
   }
 }
