@@ -1,158 +1,188 @@
-/* Base styles for a light theme */
+/* Light Theme (Default) */
+:root {
+  --bg-color: white;
+  --text-color: #333;
+  --accent-color: #4CAF50;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: white;
-  color: #333;
+  background: var(--bg-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
 }
 
-/* Header Styles */
+/* Header */
 header {
-  background: white;
-  color: black;
+  background: var(--bg-color);
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
+  border-bottom: 2px solid #ddd;
 }
 
 .header-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
-.header-content .profile-pic {
-  width: 100px;
-  height: 100px;
+.profile-pic {
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
 nav {
-  background: white;
-  padding: 0.5rem 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0.5rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
-  margin: 0 1rem;
   text-decoration: none;
-  color: #4CAF50;
+  color: var(--accent-color);
   font-weight: bold;
+  transition: 0.3s;
 }
 
-/* Main Sections */
-main {
-  padding: 2rem;
+nav a:hover {
+  color: #388E3C;
 }
 
+#dark-mode-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Sections */
 section {
-  margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 h2 {
-  color: #4CAF50;
+  text-align: left;
+  color: var(--accent-color);
   border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
 }
 
-/* Skills Container */
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: left;
+h3 {
+  text-align: left;
+  color: var(--accent-color);
 }
 
-/* Skill Item */
-.skill {
-  width: 100px;
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+
+/* Certification Items (Styled like text but clickable) */
+.grid-item {
+  background: var(--bg-color);
   padding: 10px;
-  background-color: white;
   border-radius: 5px;
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-decoration: none;  /* Remove underline */
+  color: inherit;         /* Make link color same as text */
+  font-weight: bold;
 }
 
-/* .skill:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-} */
+/* Hover Effect */
+.grid-item:hover {
+  transform: scale(1.05);
+}
+
+/* Prevent color change after clicking */
+.grid-item:visited {
+  color: inherit;
+}
 
 
-/* Project Section Styling */
+/* Remove default styles for anchor links inside projects */
 .project-link {
-text-decoration: none;
-color: inherit;
-display: block;
+  text-decoration: none; /* Remove the underline */
+  color: inherit;         /* Keep the color as it is from the surrounding content */
 }
 
+/* Projects */
 .project {
-border: 1px solid #ddd;
-padding: 1.5rem;
-margin: 1rem 0;
-transition: transform 0.3s, box-shadow 0.3s;
-border-radius: 8px;
-background: white;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-cursor: pointer;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: var(--bg-color);
+  transition: transform 0.3s;
+  color: inherit; /* Ensures text color stays consistent */
 }
 
-.project h3 {
-color: #4CAF50;
-}
-
-
+/* On hover: enlarge the project card */
 .project:hover {
-transform: scale(1.05);
-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05);
 }
 
-/* Remove default link styling */
+/* Ensures the project link doesn't change color when visited */
+.project-link:visited .project {
+  color: inherit;
+}
+
+/* On hover, the project link doesn't change text color */
 .project-link:hover .project {
-text-decoration: none;
-}
-
-/* Certifications Container */
-.certifications-container {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-justify-content: left;
-}
-
-/* Certification Item */
-.certification {
-width: 100px;
-padding: 10px;
-background-color: white;
-border-radius: 5px;
-text-align: center;
-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-color: black; /* Make sure the text color is black */
-}
-
-.certification:hover {
-transform: scale(1.05);
-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-/* Remove underline and default link styling */
-.certification-link {
-text-decoration: none; /* Ensure there is no underline */
-color: inherit; /* Inherit color from .certification */
-}
-
-/* Set certification text color to black and ensure no underline */
-.certification-link span {
-color: black; /* Ensure text is black */
+  color: inherit;
 }
 
 
-/* Footer */
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  text-align: left;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: green; /* Ensure link text is green */
+  text-decoration: none; /* Remove underline */
+}
+
+#contact a:hover {
+  text-decoration: none; /* No underline on hover */
+  color: green; /* Keep it green on hover */
+}
+
+#contact a:visited {
+  color: green; /* Keep the color green even after visiting */
+}
+
+
+/* Dark Mode */
+.dark-mode {
+  --bg-color: #1e1e1e;
+  --text-color: white;
+  --accent-color: #4CAF50;
+}
+
 footer {
   text-align: center;
-  padding: 1rem 0;
-  background: white;
-  color: black;
+  padding: 1rem;
+  background: var(--bg-color);
 }
