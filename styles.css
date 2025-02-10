@@ -1,90 +1,86 @@
 /* Base styles for a light theme */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: white;
-  color: #333;
-  box-sizing: border-box;
-}
-
-/* Header Styles */
-header {
-  background: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; /* Align items vertically on smaller screens */
-}
-
-.header-content .profile-pic {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 1rem;
-}
-
-nav {
-  background: #fff;
-  padding: 0.5rem 0;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-nav a {
-  margin: 0 1rem;
-  text-decoration: none;
-  color: #4CAF50;
-  font-weight: bold;
-  display: inline-block;
-}
-
-/* Main Sections */
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-h2 {
-  color: #4CAF50;
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
-  font-size: 1.8rem;
-}
-
-/* Skills Container */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  header {
+    background: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header-content .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  nav {
+    background: #fff;
+    padding: 0.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+  }
+  
+  /* Main Sections */
+  main {
+    padding: 2rem;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Skills Container */
 .skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  /* Skill Item */
+  .skill {
+    width: 100px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
-/* Skill Item */
-.skill {
-  width: 100px;
-  padding: 10px;
-  background-color: white;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.skill:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  
 /* Project Section Styling */
 .project-link {
   text-decoration: none;
@@ -107,9 +103,15 @@ h2 {
   color: #4CAF50;
 }
 
+
 .project:hover {
   transform: scale(1.05);
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Remove default link styling */
+.project-link:hover .project {
+  text-decoration: none;
 }
 
 /* Certifications Container */
@@ -136,148 +138,28 @@ h2 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Remove underline and default link styling */
 .certification-link {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none; /* Ensure there is no underline */
+  color: inherit; /* Inherit color from .certification */
 }
 
+/* Set certification text color to black and ensure no underline */
 .certification-link span {
-  color: black;
+  color: black; /* Ensure text is black */
 }
 
 .certification-link:hover .certification {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Same hover effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Same hover shadow */
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem 0;
-  background: #4CAF50;
-  color: white;
-}
 
-/* Media Queries for responsive design */
-@media (max-width: 1024px) {
-  /* Adjust header layout for larger tablets or small desktop screens */
-  .header-content {
-      flex-direction: column;
-  }
 
-  .header-content .profile-pic {
-      margin-right: 0;
-      margin-bottom: 1rem;
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #4CAF50;
+    color: white;
   }
-
-  /* Adjusting navigation links for medium screens */
-  nav {
-      padding: 0.5rem;
-  }
-
-  nav a {
-      display: block;
-      margin: 0.5rem 0;
-      text-align: center;
-  }
-
-  /* Skills Section */
-  .skills-container {
-      flex-direction: row;
-      justify-content: center;
-  }
-
-  .skill {
-      width: 120px;
-      text-align: center;
-  }
-
-  /* Project Section */
-  .project {
-      margin: 1.5rem 0;
-  }
-
-  /* Certifications Section */
-  .certifications-container {
-      flex-direction: row;
-      justify-content: center;
-  }
-
-  .certification {
-      width: 120px;
-      text-align: center;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Make header items stack on smaller screens */
-  .header-content {
-      flex-direction: column;
-  }
-
-  .header-content .profile-pic {
-      margin-right: 0;
-      margin-bottom: 1rem;
-  }
-
-  /* Adjusting navigation links for smaller screens */
-  nav {
-      padding: 0.5rem;
-  }
-
-  nav a {
-      display: block;
-      margin: 0.5rem 0;
-      text-align: center;
-  }
-
-  /* Skills Section */
-  .skills-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .skill {
-      width: 100%;
-      text-align: center;
-  }
-
-  /* Project Section */
-  .project {
-      margin: 1rem 0;
-  }
-
-  /* Certifications Section */
-  .certifications-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .certification {
-      width: 100%;
-      text-align: center;
-  }
-}
-
-@media (max-width: 480px) {
-  /* Further adjustments for mobile screens */
-  main {
-      padding: 1rem;
-  }
-
-  /* Skills and Certifications layout */
-  .skills-container,
-  .certifications-container {
-      flex-direction: column;
-      gap: 15px;
-  }
-
-  /* Project text size adjustment */
-  .project h3 {
-      font-size: 1.2rem;
-  }
-
-  .project p {
-      font-size: 0.9rem;
-  }
-}
