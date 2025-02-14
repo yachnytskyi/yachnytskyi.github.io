@@ -6,6 +6,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -14,8 +15,14 @@ body {
   scroll-behavior: smooth;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* Header */
 header {
+  overflow-x: auto;
+  white-space: nowrap;
   background: var(--bg-color);
   text-align: center;
   padding: 1rem;
@@ -40,7 +47,7 @@ nav {
   justify-content: center;
   gap: 15px;
   padding: 0.5rem;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  white-space: nowrap;   /* Prevent nav items from wrapping */
 }
 
 nav a {
