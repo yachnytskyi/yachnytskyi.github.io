@@ -21,7 +21,7 @@ html {
 
 /* Header */
 header {
-  overflow-x: visible;
+  overflow-x: auto;
   background: var(--bg-color);
   text-align: center;
   padding: 1rem;
