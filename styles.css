@@ -47,7 +47,6 @@ nav {
   justify-content: center;
   gap: 15px;
   padding: 0.5rem;
-  white-space: nowrap;   /* Prevent nav items from wrapping */
 }
 
 nav a {
