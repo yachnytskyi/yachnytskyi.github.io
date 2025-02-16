@@ -14,9 +14,7 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Header */
 header {
-  overflow-x: visible;
   background: var(--bg-color);
   text-align: center;
   padding: 1rem;
@@ -37,6 +35,7 @@ header {
 }
 
 nav {
+  overflow-x: visible;
   display: flex;
   justify-content: center;
   gap: 15px;
