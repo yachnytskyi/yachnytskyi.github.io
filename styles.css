@@ -3,22 +3,23 @@
   --bg-color: white;
   --text-color: #333;
   --accent-color: #4CAF50;
+  --hover-accent: #388E3C;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
   background: var(--bg-color);
   color: var(--text-color);
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 header {
-  overflow-x: auto;
   background: var(--bg-color);
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-bottom: 2px solid #ddd;
 }
 
@@ -30,53 +31,46 @@ header {
 }
 
 .profile-pic {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  border: 3px solid var(--accent-color);
 }
 
 nav {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  padding: 0.5rem;
+  gap: 18px;
+  padding: 0.8rem;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: var(--accent-color);
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 nav a:hover {
-  color: #388E3C;
-}
-
-#dark-mode-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  cursor: pointer;
+  color: var(--hover-accent);
 }
 
 /* Sections */
 section {
-  max-width: 800px;
+  max-width: 850px;
   margin: 2rem auto;
   padding: 1rem;
-  border-radius: 8px;
 }
 
 h2 {
-  text-align: left;
   color: var(--accent-color);
   border-bottom: 2px solid #ddd;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  text-align: left;
   color: var(--accent-color);
 }
 
@@ -84,105 +78,67 @@ h3 {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
+  gap: 12px;
 }
 
-/* Certification Items (Styled like text but clickable) */
 .grid-item {
   background: var(--bg-color);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 6px;
   text-align: left;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  text-decoration: none;  /* Remove underline */
-  color: inherit;         /* Make link color same as text */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Hover Effect */
 .grid-item:hover {
-  transform: scale(1.05);
-}
-
-/* Prevent color change after clicking */
-.grid-item:visited {
-  color: inherit;
-}
-
-
-/* Remove default styles for anchor links inside projects */
-.project-link {
-  text-decoration: none; /* Remove the underline */
-  color: inherit;         /* Keep the color as it is from the surrounding content */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 /* Projects */
 .project {
   display: block;
-  padding: 1rem;
+  padding: 1.2rem;
   margin: 1rem 0;
   border-radius: 8px;
   background: var(--bg-color);
-  transition: transform 0.3s;
-  color: inherit; /* Ensures text color stays consistent */
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 1px solid #eee;
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
 }
 
-
-
-/* Ensures the project link doesn't change color when visited */
-.project-link:visited .project {
-  color: inherit;
-}
-
-/* On hover, the project link doesn't change text color */
-.project-link:hover .project {
-  color: inherit;
-}
-
-
-/* Contact Section */
+/* Contact */
 #contact {
   padding: 2rem;
-  text-align: left;
-}
-
-#contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-#contact p {
-  font-size: 1.1rem;
 }
 
 #contact a {
-  color: green; /* Ensure link text is green */
-  text-decoration: none; /* Remove underline */
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 #contact a:hover {
-  text-decoration: none; /* No underline on hover */
-  color: green; /* Keep it green on hover */
+  color: var(--hover-accent);
 }
-
-#contact a:visited {
-  color: green; /* Keep the color green even after visiting */
-}
-
 
 /* Dark Mode */
 .dark-mode {
   --bg-color: #1e1e1e;
-  --text-color: white;
+  --text-color: #eee;
   --accent-color: #4CAF50;
+  --hover-accent: #66bb6a;
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background: var(--bg-color);
+  border-top: 2px solid #ddd;
+  font-size: 0.9rem;
 }
