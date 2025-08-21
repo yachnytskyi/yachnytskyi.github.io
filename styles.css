@@ -1,144 +1,49 @@
-/* Light Theme (Default) */
-:root {
-  --bg-color: white;
-  --text-color: #333;
-  --accent-color: #4CAF50;
-  --hover-accent: #388E3C;
-}
-
-body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: var(--bg-color);
-  color: var(--text-color);
-  scroll-behavior: smooth;
-  line-height: 1.6;
-}
-
-header {
-  background: var(--bg-color);
-  text-align: center;
-  padding: 1.5rem 1rem;
-  border-bottom: 2px solid #ddd;
-}
-
-.header-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.profile-pic {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 3px solid var(--accent-color);
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding: 0.8rem;
-  flex-wrap: wrap;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--accent-color);
-  font-weight: 600;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: var(--hover-accent);
-}
-
-/* Sections */
-section {
-  max-width: 850px;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-h2 {
-  color: var(--accent-color);
-  border-bottom: 2px solid #ddd;
-  padding-bottom: 0.4rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  color: var(--accent-color);
-}
-
-/* Grid Layout */
-.grid-container {
+/* Projects Section */
+#projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 12px;
+  gap: 1.2rem;
 }
 
-.grid-item {
-  background: var(--bg-color);
-  padding: 12px;
-  border-radius: 6px;
-  text-align: left;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.grid-item:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
-}
-
-/* Projects */
-.project {
+.project-link {
   display: block;
-  padding: 1.2rem;
-  margin: 1rem 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project {
+  background: #fafafa; /* Slight contrast */
+  border: 1px solid #ddd;
   border-radius: 8px;
-  background: var(--bg-color);
-  transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid #eee;
+  padding: 1.2rem 1.5rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.project p {
+  margin: 0;
+  line-height: 1.5;
 }
 
 .project:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
 }
 
-/* Contact */
-#contact {
-  padding: 2rem;
-}
-
-#contact a {
-  color: var(--accent-color);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-#contact a:hover {
-  color: var(--hover-accent);
-}
-
-/* Dark Mode */
-.dark-mode {
-  --bg-color: #1e1e1e;
-  --text-color: #eee;
-  --accent-color: #4CAF50;
-  --hover-accent: #66bb6a;
-}
-
-footer {
+/* Certifications Section */
+#certifications .grid-item {
+  background: #fafafa;
   text-align: center;
-  padding: 1rem;
-  border-top: 2px solid #ddd;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  border: 1px solid #ddd;
+}
+
+#certifications .grid-item:hover {
+  background: var(--accent-color);
+  color: white;
+  transform: translateY(-3px);
 }
