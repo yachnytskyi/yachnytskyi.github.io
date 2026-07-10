@@ -1,6 +1,6 @@
 /* ==========================================================
    Constantine Yachnytskyi — Personal Portfolio
-   Responsive professional portfolio for GitHub Pages
+   Light, responsive, accessible GitHub Pages design
    ========================================================== */
 
 /* ---------- Theme ---------- */
@@ -8,35 +8,36 @@
 :root {
   color-scheme: light;
 
-  --page-bg: #f3f6fa;
+  --page-bg: #f8fafc;
   --surface: #ffffff;
-  --surface-soft: #f7f9fc;
-  --surface-blue: #eef5fc;
+  --surface-soft: #fbfcfe;
+  --surface-blue: #f1f7fc;
+  --header-bg: #ffffff;
 
   --text: #172033;
-  --text-secondary: #3f4b5f;
-  --text-muted: #5f6c7f;
+  --text-secondary: #3d4a5d;
+  --text-muted: #637083;
 
-  --primary: #1667a8;
-  --primary-dark: #0d4f84;
-  --primary-soft: rgba(22, 103, 168, 0.1);
+  --primary: #176aa6;
+  --primary-dark: #0f527f;
+  --primary-soft: #eaf4fb;
 
-  --green: #247354;
+  --success: #287957;
 
-  --border: #d9e1eb;
-  --border-dark: #c6d0dd;
+  --border: #dce4ed;
+  --border-strong: #cbd6e2;
 
   --shadow:
-    0 1px 2px rgba(15, 23, 42, 0.03),
-    0 8px 24px rgba(15, 23, 42, 0.06);
+    0 1px 2px rgba(15, 23, 42, 0.025),
+    0 8px 25px rgba(15, 23, 42, 0.055);
 
   --shadow-hover:
-    0 4px 10px rgba(15, 23, 42, 0.05),
-    0 16px 38px rgba(15, 23, 42, 0.09);
+    0 4px 12px rgba(15, 23, 42, 0.045),
+    0 15px 38px rgba(15, 23, 42, 0.075);
 
   --radius-sm: 0.55rem;
   --radius-md: 0.9rem;
-  --radius-lg: 1.25rem;
+  --radius-lg: 1.2rem;
   --radius-pill: 999px;
 
   --page-width: 1080px;
@@ -84,9 +85,14 @@ body {
 
   background:
     radial-gradient(
-      circle at 15% 0%,
-      rgba(22, 103, 168, 0.07),
-      transparent 28rem
+      circle at 10% 0%,
+      rgba(70, 145, 200, 0.055),
+      transparent 30rem
+    ),
+    radial-gradient(
+      circle at 95% 8%,
+      rgba(105, 175, 210, 0.04),
+      transparent 26rem
     ),
     var(--page-bg);
 
@@ -116,7 +122,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgba(22, 103, 168, 0.3);
+  outline: 3px solid rgba(23, 106, 166, 0.26);
   outline-offset: 3px;
   border-radius: 0.3rem;
 }
@@ -159,30 +165,45 @@ header {
   position: relative;
   overflow: hidden;
 
-  color: #ffffff;
-
+  color: var(--text);
   background:
     linear-gradient(
       135deg,
-      #0d2945 0%,
-      #123d63 55%,
-      #17587e 100%
+      #ffffff 0%,
+      #fbfdff 58%,
+      #f3f8fc 100%
     );
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 10px 35px rgba(15, 23, 42, 0.16);
+  border-bottom: 1px solid var(--border);
+  box-shadow:
+    0 1px 0 rgba(15, 23, 42, 0.025),
+    0 8px 28px rgba(15, 23, 42, 0.045);
 }
 
 header::before {
   content: "";
   position: absolute;
-  top: -13rem;
-  right: -10rem;
+  top: -14rem;
+  right: -11rem;
 
-  width: 32rem;
-  height: 32rem;
+  width: 34rem;
+  height: 34rem;
 
-  background: rgba(113, 190, 255, 0.1);
+  background: rgba(74, 150, 205, 0.06);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: -15rem;
+  left: -12rem;
+
+  width: 30rem;
+  height: 30rem;
+
+  background: rgba(120, 185, 215, 0.035);
   border-radius: 50%;
   pointer-events: none;
 }
@@ -199,7 +220,7 @@ header::before {
 
   width: min(calc(100% - 2rem), var(--header-content-width));
   margin: 0 auto;
-  padding: clamp(2.5rem, 5vw, 4.25rem) 0 2.25rem;
+  padding: clamp(2.5rem, 5vw, 4.15rem) 0 2.2rem;
 }
 
 .profile-pic {
@@ -209,12 +230,13 @@ header::before {
   object-fit: cover;
   object-position: center 30%;
 
-  border: 4px solid rgba(255, 255, 255, 0.96);
+  border: 4px solid #ffffff;
   border-radius: 50%;
 
   box-shadow:
-    0 0 0 7px rgba(255, 255, 255, 0.09),
-    0 16px 40px rgba(0, 0, 0, 0.28);
+    0 0 0 1px var(--border-strong),
+    0 0 0 7px rgba(23, 106, 166, 0.045),
+    0 14px 35px rgba(15, 23, 42, 0.13);
 }
 
 .header-text {
@@ -225,7 +247,7 @@ header::before {
 .header-text h1 {
   margin: 0;
 
-  color: #ffffff;
+  color: var(--text);
 
   font-size: clamp(2.2rem, 5vw, 3.7rem);
   font-weight: 780;
@@ -237,7 +259,7 @@ header::before {
 .headline {
   margin: 0.78rem 0 0;
 
-  color: #edf6ff;
+  color: #29465f;
 
   font-size: clamp(1.18rem, 2.4vw, 1.55rem);
   font-weight: 750;
@@ -247,7 +269,7 @@ header::before {
 .subheadline {
   margin: 0.45rem 0 0;
 
-  color: rgba(255, 255, 255, 0.84);
+  color: var(--text-secondary);
 
   font-size: clamp(0.97rem, 1.8vw, 1.1rem);
   font-weight: 560;
@@ -270,35 +292,37 @@ header::before {
   min-height: 2.65rem;
   padding: 0.65rem 1rem;
 
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.09);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--primary-dark);
+  background: #ffffff;
+  border: 1px solid var(--border-strong);
   border-radius: var(--radius-pill);
 
   font-size: 0.94rem;
   font-weight: 750;
   line-height: 1;
   text-decoration: none;
+
+  box-shadow: 0 3px 10px rgba(15, 23, 42, 0.045);
 }
 
 .header-actions a:first-child {
-  color: #10263d;
-  background: #ffffff;
-  border-color: #ffffff;
+  color: #ffffff;
+  background: var(--primary);
+  border-color: var(--primary);
 }
 
 .header-actions a:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.17);
-  border-color: rgba(255, 255, 255, 0.52);
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  border-color: rgba(23, 106, 166, 0.38);
 
   transform: translateY(-1px);
 }
 
 .header-actions a:first-child:hover {
-  color: #10263d;
-  background: #edf6ff;
-  border-color: #edf6ff;
+  color: #ffffff;
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
 
 /* ---------- Navigation ---------- */
@@ -317,13 +341,13 @@ nav {
   margin: 0 auto;
   padding: 0.68rem 0;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid var(--border);
 }
 
 nav a {
   padding: 0.55rem 0.8rem;
 
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--text-secondary);
 
   font-size: 0.93rem;
   font-weight: 720;
@@ -333,8 +357,8 @@ nav a {
 }
 
 nav a:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-dark);
+  background: var(--primary-soft);
 }
 
 /* ==========================================================
@@ -343,16 +367,16 @@ nav a:hover {
 
 main {
   width: min(calc(100% - 2rem), var(--content-width));
-  margin: clamp(1.5rem, 4vw, 2.75rem) auto;
+  margin: clamp(1.35rem, 4vw, 2.4rem) auto;
 }
 
 section {
   position: relative;
 
-  margin: 0 0 1.15rem;
-  padding: clamp(1.25rem, 3vw, 1.85rem);
+  margin: 0 0 1rem;
+  padding: clamp(1.25rem, 3vw, 1.8rem);
 
-  background: var(--surface);
+  background: rgba(255, 255, 255, 0.96);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
 
@@ -365,7 +389,7 @@ section {
 }
 
 section:hover {
-  border-color: rgba(22, 103, 168, 0.28);
+  border-color: rgba(23, 106, 166, 0.24);
   box-shadow: var(--shadow-hover);
   transform: translateY(-1px);
 }
@@ -377,7 +401,7 @@ section:last-child {
 section h2 {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.7rem;
 
   margin: 0 0 1rem;
 
@@ -392,8 +416,8 @@ section h2 {
 section h2::before {
   content: "";
 
-  width: 0.28rem;
-  height: 1.45em;
+  width: 0.25rem;
+  height: 1.4em;
 
   flex: 0 0 auto;
 
@@ -401,14 +425,14 @@ section h2::before {
     linear-gradient(
       180deg,
       var(--primary),
-      #4a9ed4
+      #6aadd5
     );
 
   border-radius: var(--radius-pill);
 }
 
 section p {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.82rem;
 
   color: var(--text-secondary);
 
@@ -427,7 +451,7 @@ section p:last-child {
     linear-gradient(
       145deg,
       #ffffff 0%,
-      #f9fbfd 100%
+      #fcfdff 100%
     );
 }
 
@@ -460,7 +484,7 @@ section p:last-child {
   padding: 0.9rem 0.95rem 0.9rem 2.6rem;
 
   color: var(--text-secondary);
-  background: var(--surface-soft);
+  background: #fbfcfe;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
 
@@ -483,7 +507,7 @@ section p:last-child {
   height: 1.15rem;
 
   color: #ffffff;
-  background: var(--green);
+  background: var(--success);
   border-radius: 50%;
 
   font-size: 0.7rem;
@@ -496,8 +520,8 @@ section p:last-child {
    ========================================================== */
 
 .skill-group + .skill-group {
-  margin-top: 1.25rem;
-  padding-top: 1.15rem;
+  margin-top: 1.2rem;
+  padding-top: 1.1rem;
 
   border-top: 1px solid var(--border);
 }
@@ -526,9 +550,9 @@ section p:last-child {
   min-height: 2.15rem;
   padding: 0.45rem 0.75rem;
 
-  color: #203f59;
-  background: var(--surface-blue);
-  border: 1px solid rgba(22, 103, 168, 0.2);
+  color: #294961;
+  background: #f2f7fb;
+  border: 1px solid #d7e5ef;
   border-radius: var(--radius-pill);
 
   font-size: 0.88rem;
@@ -546,8 +570,8 @@ section p:last-child {
 
 .grid-item:hover {
   color: var(--primary-dark);
-  background: #e2f0fc;
-  border-color: rgba(22, 103, 168, 0.4);
+  background: #eaf4fb;
+  border-color: rgba(23, 106, 166, 0.34);
 
   transform: translateY(-1px);
 }
@@ -560,7 +584,7 @@ section p:last-child {
   background:
     linear-gradient(
       145deg,
-      #eef6fc 0%,
+      #f7fbfe 0%,
       #ffffff 72%
     );
 }
@@ -585,9 +609,11 @@ section p:last-child {
   min-width: 0;
   padding: 0.8rem 0.9rem;
 
-  background: rgba(255, 255, 255, 0.88);
+  background: #ffffff;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
+
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.025);
 }
 
 .contact-list strong {
@@ -625,7 +651,7 @@ section p:last-child {
    ========================================================== */
 
 footer {
-  padding: 0.75rem 1rem 2rem;
+  padding: 0.7rem 1rem 2rem;
 
   color: var(--text-muted);
   text-align: center;
@@ -647,7 +673,7 @@ footer p {
 
     width: min(calc(100% - 1.5rem), 680px);
     padding-top: 2.25rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 1.75rem;
 
     text-align: center;
   }
@@ -690,7 +716,7 @@ footer p {
   .header-content {
     width: min(calc(100% - 1.25rem), var(--page-width));
     padding-top: 1.8rem;
-    padding-bottom: 1.4rem;
+    padding-bottom: 1.35rem;
   }
 
   .profile-pic {
@@ -730,11 +756,11 @@ footer p {
 
   main {
     width: calc(100% - 1rem);
-    margin-top: 1rem;
+    margin-top: 0.9rem;
   }
 
   section {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.75rem;
     padding: 1.15rem 1rem;
 
     border-radius: 1rem;
@@ -797,83 +823,6 @@ footer p {
 }
 
 /* ==========================================================
-   Dark mode
-   ========================================================== */
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-
-    --page-bg: #09111c;
-    --surface: #111b29;
-    --surface-soft: #162131;
-    --surface-blue: #112a3e;
-
-    --text: #f1f6fc;
-    --text-secondary: #d0dae6;
-    --text-muted: #a1afc0;
-
-    --primary: #72c0ff;
-    --primary-dark: #a4d8ff;
-    --primary-soft: rgba(114, 192, 255, 0.1);
-
-    --green: #51ae80;
-
-    --border: #2b394d;
-    --border-dark: #3a4a62;
-
-    --shadow:
-      0 1px 2px rgba(0, 0, 0, 0.18),
-      0 8px 24px rgba(0, 0, 0, 0.18);
-
-    --shadow-hover:
-      0 4px 10px rgba(0, 0, 0, 0.2),
-      0 16px 38px rgba(0, 0, 0, 0.28);
-  }
-
-  body {
-    background:
-      radial-gradient(
-        circle at 15% 0%,
-        rgba(80, 160, 220, 0.09),
-        transparent 28rem
-      ),
-      var(--page-bg);
-  }
-
-  #about {
-    background:
-      linear-gradient(
-        145deg,
-        #111b29 0%,
-        #0f1926 100%
-      );
-  }
-
-  #contact {
-    background:
-      linear-gradient(
-        145deg,
-        #12283a 0%,
-        #111b29 72%
-      );
-  }
-
-  .grid-item {
-    color: #d7eeff;
-  }
-
-  .grid-item:hover {
-    color: #ffffff;
-    background: #173850;
-  }
-
-  .contact-list li {
-    background: rgba(17, 27, 41, 0.88);
-  }
-}
-
-/* ==========================================================
    Reduced motion
    ========================================================== */
 
@@ -902,21 +851,6 @@ footer p {
    ========================================================== */
 
 @media print {
-  :root {
-    color-scheme: light;
-
-    --page-bg: #ffffff;
-    --surface: #ffffff;
-    --surface-soft: #ffffff;
-    --surface-blue: #ffffff;
-
-    --text: #000000;
-    --text-secondary: #222222;
-    --text-muted: #444444;
-
-    --border: #cccccc;
-  }
-
   body {
     background: #ffffff;
     color: #000000;
@@ -939,7 +873,8 @@ footer p {
     box-shadow: none;
   }
 
-  header::before {
+  header::before,
+  header::after {
     display: none;
   }
 
