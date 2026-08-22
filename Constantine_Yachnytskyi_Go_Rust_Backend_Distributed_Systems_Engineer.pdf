@@ -1,678 +1,114 @@
 %PDF-1.4
-%âãÏÓ
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
 <<
-/Producer (pypdf)
+/F1 2 0 R /F2 3 0 R
 >>
 endobj
 2 0 obj
 <<
-/Type /Pages
-/Count 1
-/Kids [ 4 0 R ]
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
 >>
 endobj
 3 0 obj
 <<
-/Type /Catalog
-/Pages 2 0 R
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
 >>
 endobj
 4 0 obj
 <<
-/Type /Page
-/Annots [ 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R ]
-/Contents 10 0 R
-/MediaBox [ 0 0 595.2756 841.8898 ]
-/Resources <<
-/Font <<
-/F2 11 0 R
-/F1 12 0 R
-/helv 13 0 R
->>
->>
-/Rotate 0
-/Trans <<
->>
-/Parent 2 0 R
+/A <<
+/S /URI /Type /Action /URI (tel:+380955603751)
+>> /Border [ 0 0 0 ] /Rect [ 183.9992 735.8898 246.3408 746.3398 ] /Subtype /Link /Type /Annot
 >>
 endobj
 5 0 obj
 <<
-/Type /Annot
-/Subtype /Link
 /A <<
-/Type /Action
-/S /URI
-/URI (tel\072\053380955603751)
->>
-/Border [ 0 0 0 ]
-/Rect [ 183.9992 736.0079 246.3408 745.4579 ]
+/S /URI /Type /Action /URI (mailto:yachnytskyi1992@gmail.com)
+>> /Border [ 0 0 0 ] /Rect [ 256.5622 735.8898 353.1366 746.3398 ] /Subtype /Link /Type /Annot
 >>
 endobj
 6 0 obj
 <<
-/Type /Annot
-/Subtype /Link
 /A <<
-/Type /Action
-/S /URI
-/URI (mailto\072yachnytskyi1992\100gmail\056com)
->>
-/Border [ 0 0 0 ]
-/Rect [ 256.5622 736.0079 353.1366 745.4579 ]
+/S /URI /Type /Action /URI (https://linkedin.com/in/constantine-yachnytsky)
+>> /Border [ 0 0 0 ] /Rect [ 363.358 735.8898 391.519 746.3398 ] /Subtype /Link /Type /Annot
 >>
 endobj
 7 0 obj
 <<
-/Type /Annot
-/Subtype /Link
 /A <<
-/Type /Action
-/S /URI
-/URI (https\072\057\057linkedin\056com\057in\057constantine\055yachnytsky)
->>
-/Border [ 0 0 0 ]
-/Rect [ 363.358 736.0079 391.519 745.4579 ]
+/S /URI /Type /Action /URI (https://github.com/yachnytskyi)
+>> /Border [ 0 0 0 ] /Rect [ 401.7404 735.8898 424.9248 746.3398 ] /Subtype /Link /Type /Annot
 >>
 endobj
 8 0 obj
 <<
-/Type /Annot
-/Subtype /Link
 /A <<
-/Type /Action
-/S /URI
-/URI (https\072\057\057github\056com\057yachnytskyi)
->>
-/Border [ 0 0 0 ]
-/Rect [ 401.7404 736.0079 424.9248 745.4579 ]
+/S /URI /Type /Action /URI (https://youtube.com/@yachnytskyi)
+>> /Border [ 0 0 0 ] /Rect [ 435.1462 735.8898 465.3783 746.3398 ] /Subtype /Link /Type /Annot
 >>
 endobj
 9 0 obj
 <<
-/Type /Annot
-/Subtype /Link
-/A <<
-/Type /Action
-/S /URI
-/URI (https\072\057\057youtube\056com\057\100constantineyachnytskyi5258)
->>
-/Border [ 0 0 0 ]
-/Rect [ 435.1462 736.0079 465.3783 745.4579 ]
+/Annots [ 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R ] /Contents 13 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 12 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 
+  /Trans <<
+
+>> /Type /Page
 >>
 endobj
 10 0 obj
 <<
-/Length 8309
+/PageMode /UseNone /Pages 12 0 R /Type /Catalog
 >>
-stream
-q
-0.14902 0.211765 0.290196 rg
-BT
-22.56 TL
-/F2 18.8 Tf
-1 0 0 1 159.768 779.5276 Tm
-(CONSTANTINE YACHNYTSKYI) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-12.36 TL
-/F2 10.3 Tf
-1 0 0 1 148.5607 756.8504 Tm
-(GO \046 RUST BACKEND \057 DISTRIBUTED SYSTEMS ENGINEER) Tj
-T*
-ET
-0.333333 0.333333 0.333333 rg
-BT
-8.94 TL
-/F1 7.45 Tf
-1 0 0 1 129.8973 737.0079 Tm
-(Kyiv\054 Ukraine) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 173.7778 737.0079 Tm
-(  \174  ) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 183.9992 737.0079 Tm
-(\053380 95 560 37 51) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 246.3408 737.0079 Tm
-(  \174  ) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 256.5622 737.0079 Tm
-(yachnytskyi1992\100gmail\056com) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 353.1366 737.0079 Tm
-(  \174  ) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 363.358 737.0079 Tm
-(LinkedIn) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 391.519 737.0079 Tm
-(  \174  ) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 401.7404 737.0079 Tm
-(GitHub) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 424.9248 737.0079 Tm
-(  \174  ) Tj
-T*
-ET
-BT
-/F1 7.45 Tf
-1 0 0 1 435.1462 737.0079 Tm
-(YouTube) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-12.24 TL
-/F2 10.2 Tf
-1 0 0 1 48.18898 702.9921 Tm
-(PROFESSIONAL SUMMARY) Tj
-T*
-ET
-0.14902 0.211765 0.290196 RG
-0.75 w
-48.18898 699.8921 m
-547.0866 699.8921 l
-S
-0 0 0 rg
-BT
-10.02 TL
-/F1 8.35 Tf
-1 0 0 1 48.18898 689.9921 Tm
-(Senior Go and Rust backend engineer with 11\053 years of experience designing\054 building\054 and optimizing production backend services) Tj
-T*
-ET
-BT
-/F1 8.35 Tf
-1 0 0 1 48.18898 679.6921 Tm
-(and distributed systems\056 Strong in system architecture\054 PostgreSQL performance\054 event\055driven services\054 microservices\054 and) Tj
-T*
-ET
-BT
-/F1 8.35 Tf
-1 0 0 1 48.18898 669.3921 Tm
-(cloud\055native delivery\056 Combines hands\055on implementation with production ownership and root\055cause analysis\054 delivering improvements) Tj
-T*
-ET
-BT
-/F1 8.35 Tf
-1 0 0 1 48.18898 659.0921 Tm
-(such as reducing page\055load time from 60\05570 seconds to 1 second and peak database CPU from 100\045 to 10\05515\045\056) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-12.24 TL
-/F2 10.2 Tf
-1 0 0 1 48.18898 645.7921 Tm
-(TECHNICAL SKILLS) Tj
-T*
-ET
-48.18898 642.6921 m
-547.0866 642.6921 l
-S
-BT
-9.78 TL
-/F2 8.15 Tf
-1 0 0 1 48.18898 632.7921 Tm
-(Core Languages) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 632.7921 Tm
-(Go \050Golang\051\054 Rust) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-/F2 8.15 Tf
-1 0 0 1 48.18898 622.5921 Tm
-(Backend \046 APIs) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 622.5921 Tm
-(Distributed Systems\054 Microservices\054 REST\054 gRPC\054 ConnectRPC\054 GraphQL\054 Event\055Driven Architecture) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-/F2 8.15 Tf
-1 0 0 1 48.18898 612.3921 Tm
-(Data \046 Search) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 612.3921 Tm
-(PostgreSQL\054 MySQL\054 MongoDB\054 Redis\054 Elasticsearch \057 ELK\054 SQL Optimization\054 Indexing) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-/F2 8.15 Tf
-1 0 0 1 48.18898 602.1921 Tm
-(Messaging) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 602.1921 Tm
-(RabbitMQ\054 NATS) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-/F2 8.15 Tf
-1 0 0 1 48.18898 591.9921 Tm
-(Cloud \046 Delivery) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 591.9921 Tm
-(AWS\054 Kubernetes\054 Docker\054 CI\057CD\054 Git) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-/F2 8.15 Tf
-1 0 0 1 48.18898 581.7921 Tm
-(Additional Languages) Tj
-T*
-ET
-0 0 0 rg
-BT
-/F1 8.15 Tf
-1 0 0 1 147.4016 581.7921 Tm
-(Python\054 Elixir) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-12.24 TL
-/F2 10.2 Tf
-1 0 0 1 48.18898 569.5921 Tm
-(PROFESSIONAL EXPERIENCE) Tj
-T*
-ET
-48.18898 566.4921 m
-547.0866 566.4921 l
-S
-BT
-10.38 TL
-/F2 8.65 Tf
-1 0 0 1 48.18898 556.5921 Tm
-(Go \057 Rust Backend Engineer \174 Capgemini Engineering) Tj
-T*
-ET
-0.333333 0.333333 0.333333 rg
-BT
-9.72 TL
-/F2 8.1 Tf
-1 0 0 1 475.5069 556.5921 Tm
-(Mar 2023 \055 Present) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 544.5921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 544.5921 Tm
-(Optimized critical backend and data\055access paths\054 reducing page\055load time from 60\05570 seconds to 1 second by eliminating N\0531) Tj
-T*
-ET
-BT
-/F1 8.15 Tf
-1 0 0 1 60.18898 534.4921 Tm
-(queries and redesigning data\055access logic\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 522.1921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 522.1921 Tm
-(Reduced database queries on key endpoints from 50\05560 to 3\0555\054 substantially lowering per\055request database work\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 509.8921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 509.8921 Tm
-(Designed composite\054 single\055column\054 and JSON indexes that reduced peak database CPU utilization from 100\045 to 10\05515\045\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 497.5921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 497.5921 Tm
-(Owned production database schema design\054 query performance\054 and data\055access optimization across backend services\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 485.2921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 485.2921 Tm
-(Resolved a long\055standing product\055availability inconsistency by tracing stale\055data behavior to a business\055logic edge case and defining a) Tj
-T*
-ET
-BT
-/F1 8.15 Tf
-1 0 0 1 60.18898 475.1921 Tm
-(durable product\055level fix\056) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-10.38 TL
-/F2 8.65 Tf
-1 0 0 1 48.18898 461.8921 Tm
-(Go \057 Rust Backend Engineer \174 GlobalLogic) Tj
-T*
-ET
-0.333333 0.333333 0.333333 rg
-BT
-9.72 TL
-/F2 8.1 Tf
-1 0 0 1 470.5497 461.8921 Tm
-(Mar 2021 \055 Mar 2023) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 449.8921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 449.8921 Tm
-(Built reusable pagination\054 ordering\054 query\055helper\054 and Elasticsearch components\054 including a shared filtering and query pipeline that) Tj
-T*
-ET
-BT
-/F1 8.15 Tf
-1 0 0 1 60.18898 439.7921 Tm
-(reduced duplicate query\057filtering code by 90\045 and improved search consistency across services\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 427.4921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 427.4921 Tm
-(Optimized Docker build workflows\054 reducing image size by up to 100x\056) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-10.38 TL
-/F2 8.65 Tf
-1 0 0 1 48.18898 414.1921 Tm
-(Earlier Go \057 Rust Backend Experience) Tj
-T*
-ET
-0.333333 0.333333 0.333333 rg
-BT
-9.72 TL
-/F2 8.1 Tf
-1 0 0 1 487.2033 414.1921 Tm
-(2015 \055 Mar 2021) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 402.1921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 402.1921 Tm
-(Built and maintained Go and Rust backend services\054 including a payment\055processing microservice handling 10\054000\053 transactions per) Tj
-T*
-ET
-BT
-/F1 8.15 Tf
-1 0 0 1 60.18898 392.0921 Tm
-(day\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 379.7921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 379.7921 Tm
-(Delivered real\055time reporting for balances and settlements and developed internal APIs supporting business\055critical workflows\056) Tj
-T*
-ET
-0.184314 0.498039 0.513725 rg
-BT
-11.4 TL
-/F1 9.5 Tf
-1 0 0 1 50.18898 367.4921 Tm
-<7f> Tj
-T*
-ET
-0 0 0 rg
-BT
-9.78 TL
-/F1 8.15 Tf
-1 0 0 1 60.18898 367.4921 Tm
-(Built an internal API gateway that reduced partner\055integration timelines from weeks to days\056) Tj
-T*
-ET
-0.14902 0.211765 0.290196 rg
-BT
-12.24 TL
-/F2 10.2 Tf
-1 0 0 1 48.18898 354.1921 Tm
-(LANGUAGES) Tj
-T*
-ET
-48.18898 351.0921 m
-547.0866 351.0921 l
-S
-0 0 0 rg
-BT
-9.96 TL
-/F1 8.3 Tf
-1 0 0 1 48.18898 341.1921 Tm
-T*
-ET
-BT
-/F1 8.3 Tf
-1 0 0 1 308.9764 341.1921 Tm
-T*
-ET
-Q
-q
-1 1 1 rg
-1 1 1 RG
-47.5 337.68977 500.5 13.200012 re
-B
-Q
-q
-0 0 0 rg
-0 0 0 RG
-BT
-/helv 8.3 Tf
-1 0 0 1 308.9764 341.1921 Tm
-[ (Russian\072 Native) ] TJ
-ET
-Q
-q
-1 1 1 rg
-1 1 1 RG
-47.68898 338.21043 85.86751 12.404205 re
-B
-Q
-q
-0 0 0 rg
-0 0 0 RG
-BT
-/helv 8.3 Tf
-1 0 0 1 48.18898 341.1921 Tm
-[ (English\072 C2) ] TJ
-ET
-Q
-
-endstream
 endobj
 11 0 obj
 <<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica-Bold
-/Encoding /WinAnsiEncoding
-/Name /F2
+/Author (Constantine Yachnytskyi) /CreationDate (D:20260822073810+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20260822073810+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (Constantine Yachnytskyi - Go & Rust Backend / Distributed Systems Engineer) /Trapped /False
 >>
 endobj
 12 0 obj
 <<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
-/Name /F1
+/Count 1 /Kids [ 9 0 R ] /Type /Pages
 >>
 endobj
 13 0 obj
 <<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica
-/Encoding /WinAnsiEncoding
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 2827
 >>
+stream
+Gau0E=``=e&q8H9ka/*.QlP-Mo!B*f-sTW69Mi,oQ!]9]Ln#1cE,eE\.R/B/"t(iHAVlLS2N=uga#Dg]+&kPBhl?T9fE,;1iU^t;W#@3/5rFH!b8GQJ$[Jn+l4?J`O/<N<Wr@pTL9"uQ1f^q8'0fbkFY-/9i[)!qYIQQrFP?iNG)>1f-tNcNNGn"ZE\q,uk8laE`kThAQN$QpoOh;*(RDgXodW@r(260Tof@i1)F+__;03V1WTpp(*[t,!#>J37YYC$8[Gn5kp^n;9rXphRj(iQsJ^6$<qTHkMnp]gt^jkj?hMi'&r!I<4(<72i?k^El(-0=80d=4,"im6*#&,]0>[%G;mhg/[kKa7?InD/N=eFDaS_1Bd]rMV#07Z6o3')%b=$+q&8Ttkf9gJJ>\%u$je>O6#d1,2irR*B39M7J<CJTRW][*p^4]g%qJ$$2E7jLX64_iPBSZ',2IB7q0V%_ZI!cc6?-PfJ;54uE8AuGO2c5;F2CdToe[9W8"pL;[N)U0D-ApeRY)7k[;C)ob"6W,IneLQ*1r2<WnW#9O4ARn<\TkLQg]>a/UT'oHnkG&pipGY%+`C!/Shah$X>nGbDQ]&?fBt6tfEXSaQ'*['u4c@+Z!HKmnUu;YHWMSR2[-`O;Q=I@HqCLc#$<IP\3.s__jfkJq'>k%jYE;7V$84O!J?"'M4el]qaWn$.4-jn&#7NqbnTE(9o`/"rO$`Xq+Y27-I*;Q.B@s%P=9LW[i^S14dUsW*m.Fr)bno+[B'kN')Y,FTq5VLRlI]`0gL^Td4AF02*`kisdpU(7(?@p,#&oo>q)W*dQPlH#O%HpZkh,sg1Q1j5Qu`+@$m*3M#AMUMU=OCVYY:eA:'=ElKYs2>W"m..n0?a&(an&QhF7\ge<^UV8\X"LCl9',$*:e8%a`<jbgL=FGOdN;,ftfB/M`'A1tlR^/[(t.)a[tIngqbNI3g4PG3r")"<4!OU^ZXRTg74G(aV!AN"-&QBsIn8);5E!*$j_dj9\F.+/J-_7\:g!3F,LhIXH?H^8*7$&+X@uTkaQlqG(YG:l&+uZ1P9"RZ9f`?Vb;jruHrTr*p`pEdcLaZA(oN&o!\?ZghXs264-1S>6R*1gUuSprPUGV<QKpWbAMS-lKST/,g9Wm&rVa,\ObZs#`eNX6jdX/&q>r7X*=f*U-1fFL]1@\RGOtLY9B1r8dq0MnAKZF"iW:1ZZ<S;S(V1R16rq,V^`>@asA%^+iKdQ6[fE%L@m:"Hf5_8QTk(Ko![]r'9O@-C4uA$O(<j&^>>;A5Y?Er8-dd!.m:N9>[$;1k99[Z>Z-#4i:[=(/\g^Dci=Qoa)p_K]#,ZK!&-:^\KX8q.T$eD18tfNWmtn2,5We5M(grm*U=\!F0-$PK#-iJNQLXND^2El0%R>j-TM2ZmM*uL*K/ra@.)qW&G2IOFOac2^6DWLk"H!hrJ]b6Z8L]jLd_F]Z&BiO1i$S!7S#]p.c'1c44T><EEE'*S4\@2?QM#T?F+7Al5aLlMcAih6#@ra1OG1]6(1C8:+S0NV@"oVL*"(%8B,e1`_<iQa.%1o6"0FV"A"?mF?X2P/7p"DX)DGmAk!Vmg_GFQ+2_1YZq;[L3J0q?2(\2pI&%'dK&T&L4)h2_5qurhm;#=EWY),Ot"+-s)_`6J!1[Pa,Bs4U3Fr+^5t5NqgnQ?ZKB!(VWus;;/mN?nS5Yp('8.b[Z+b`-+:Zd%,m/_?,EkY/YP+gTqr%9oq=BrXB9$oNH7jiBTKmBPYEkB"2g@s+O$HImRr^,oaXZ>EpNgoY.0>$?P0TcG*calSY3a]?,VI`&f'02SC[],hp-4,_O?IOjVsYTU!$4(haPhcWm6)q07G6/aF*B6G<S%mibi*+1nCnNEAS%]CeLi!Fs+\:IlJJjVgQqWIt3D/14(nHp5Y."[*;ecfQ>(a=I)A$#S4n=Lt>"V,%5,S+4=fE,J(a"aS-N5aBU]*jt%#9K#$rA9'4%C0\-A'Y[SRJ/Ck7I/,3(S@\V,%P&,Z&CBag)'.O(,*k>f-HDX25a.ok0kpg/%!te<'&NoW&-cX3uWj#o8m1B2V<VS%9<]$6O#l:X9(ur2;+50TB?576o?&&4d8#%m;pCN?jEL-ii"=k3iH&&-aY@`b>%4,LcBfb%RBIA+3&P.];MBp#?CcM\D@\Z6o1kfa5Omat<U:fQ9nS4?\I##*hAs*nToLJBF;tFd,llp6lo!2fn5IWNR8]X:H\]CqjSn^hAfVEPb9t6(!5)a,2X_ke!\Cdso[]:ljP]Dg5$gf1iibfRO\(F/Yq>+%L;XDQ#UO5?+,#!<"TL[Ie1V"bocJrLIg10P32GmcHO:Q0S'L]FPgCru4=kB^dDQE(#lTGe\k,jHs/]@ofHnuS1gc)]8QYpF'k[&'OLD]l^b)4+)!`n_V,B9_5"%?'NM7O@5<*&Ta'^RV]EB:7UFPh:Ol*fEN*dU)c/$@SV0[]%3BIF+HPjOW5%MdX;+S:f[A]e-u@sMBuPd@@m@s(Igpc;_#9>rG82K7;#mqN_7$#et"->Rr5ath?Drda9kX$cNp;-5%j^X2pV2b_[_`jnA4j>nl>4TT@EQh.L%IUVS7NcQ$iY@0D72kbGnl.Ka!F[*J.hQ`3o%J/+.U,`nA#_F]Af>^%8YTpk92=[,=9p46=e'P/IlE^cB`)dhBe"3ta<L7C-@s(O'[JZHNU-6uU<`X:='3i:4BS>\`/\F!84p`\plf[I5nT#YJo2=h%-*qo2$n7gV`ea2r2SG7'G^"[0E3Zrur2'"e8K!MjoafGP.I8UUYW7Ye[eUZXg<$O-^.YCl`9QGL/s:(kC&BL*jd/U\fl6J21HqN$~>endstream
 endobj
 xref
 0 14
 0000000000 65535 f 
-0000000015 00000 n 
-0000000054 00000 n 
-0000000113 00000 n 
-0000000162 00000 n 
-0000000391 00000 n 
-0000000566 00000 n 
-0000000759 00000 n 
-0000000976 00000 n 
-0000001173 00000 n 
-0000001390 00000 n 
-0000009752 00000 n 
-0000009865 00000 n 
-0000009973 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000490 00000 n 
+0000000674 00000 n 
+0000000870 00000 n 
+0000001052 00000 n 
+0000001236 00000 n 
+0000001483 00000 n 
+0000001553 00000 n 
+0000001895 00000 n 
+0000001955 00000 n 
 trailer
 <<
+/ID 
+[<9f9960e7dc26d0959d81c2af4dff929a><9f9960e7dc26d0959d81c2af4dff929a>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 11 0 R
+/Root 10 0 R
 /Size 14
-/Root 3 0 R
-/Info 1 0 R
 >>
 startxref
-10071
+4874
 %%EOF
