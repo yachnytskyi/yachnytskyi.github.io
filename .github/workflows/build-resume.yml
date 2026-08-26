@@ -34,21 +34,23 @@ jobs:
       - name: Install pinned PDF dependency
         run: python -m pip install reportlab==4.4.9
 
-      - name: Build resume PDF
-        run: >-
-          python scripts/build_resume.py
-          resume.json
-          Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
-
-      - name: Commit rebuilt PDF
+      - name: Build resume PDFs
         run: |
-          PDF=Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
-          if git diff --quiet -- "$PDF"; then
-            echo "Resume PDF already up to date."
+          PRIMARY=Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+          LEGACY=Constantine_Yachnytskyi_Golang_Rust_Engineer.pdf
+          python scripts/build_resume.py resume.json "$PRIMARY"
+          cp "$PRIMARY" "$LEGACY"
+
+      - name: Commit rebuilt PDFs
+        run: |
+          PRIMARY=Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+          LEGACY=Constantine_Yachnytskyi_Golang_Rust_Engineer.pdf
+          if git diff --quiet -- "$PRIMARY" "$LEGACY"; then
+            echo "Resume PDFs already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "$PDF"
-          git commit -m "Rebuild resume PDF"
+          git add "$PRIMARY" "$LEGACY"
+          git commit -m "Rebuild resume PDFs"
           git push origin HEAD:main
