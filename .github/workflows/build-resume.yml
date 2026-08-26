@@ -11,14 +11,19 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: resume-pdf-main
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout current main
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Set up Python
@@ -26,8 +31,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install PDF dependency
-        run: python -m pip install reportlab
+      - name: Install pinned PDF dependency
+        run: python -m pip install reportlab==4.4.9
 
       - name: Build resume PDF
         run: >-
@@ -37,12 +42,13 @@ jobs:
 
       - name: Commit rebuilt PDF
         run: |
-          if git diff --quiet -- Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf; then
+          PDF=Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+          if git diff --quiet -- "$PDF"; then
             echo "Resume PDF already up to date."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+          git add "$PDF"
           git commit -m "Rebuild resume PDF"
-          git push
+          git push origin HEAD:main
