@@ -1,0 +1,48 @@
+name: Build Resume PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - resume.json
+      - scripts/build_resume.py
+      - .github/workflows/build-resume.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PDF dependency
+        run: python -m pip install reportlab
+
+      - name: Build resume PDF
+        run: >-
+          python scripts/build_resume.py
+          resume.json
+          Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+
+      - name: Commit rebuilt PDF
+        run: |
+          if git diff --quiet -- Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf; then
+            echo "Resume PDF already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Constantine_Yachnytskyi_Go_Rust_Backend_Distributed_Systems_Engineer.pdf
+          git commit -m "Rebuild resume PDF"
+          git push
